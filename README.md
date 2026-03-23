@@ -1,29 +1,93 @@
-# Qt Supervisory Client/Server
+# 📡 Qt Supervisory Client/Server
 
-Este projeto é um sistema cliente/servidor para supervisão e visualização gráfica de dados, implementado com **Qt** em C++.  
-Ele permite que um servidor armazene valores associados a timestamps, enquanto clientes podem produzir novos valores (*Producer*) ou consumir e visualizar esses valores em um gráfico em tempo real (*Consumer*).
+## 📌 Sobre o projeto
 
-## Componentes
+O **Qt Supervisory Client/Server** é um sistema desenvolvido em C++ com o framework Qt, com foco em **comunicação cliente-servidor e visualização de dados em tempo real**.
 
-- **Producer**  
-  Cliente responsável por enviar (produzir) valores para o servidor junto com timestamps.  
-  **Criador:** *Aysllan Paulo de Macedo*
+O projeto simula um ambiente de supervisão, onde diferentes clientes interagem com um servidor central para envio e visualização de dados associados a timestamps.
 
-- **Consumer**  
-  Cliente responsável por requisitar (consumir) valores do servidor e exibi-los em um gráfico dinâmico.  
-  **Criador:** *Gabriel Figueiredo Gonzaga*
+---
 
-- **Servidor**  
-  Armazena os valores enviados pelos *Producers* e atende às requisições dos *Consumers*.  
-  Pode atender múltiplos clientes simultaneamente.
+## 🛠️ Tecnologias utilizadas
 
-## Como executar
+* 💻 **C++**
+* ⚙️ **Qt Framework**
+* 🌐 Comunicação via TCP/IP
+* 📊 Interface gráfica em tempo real
 
-1. Compile os três programas (Servidor, Producer, Consumer) separadamente usando Qt Creator ou `qmake`/`make`.
-2. Execute o servidor em uma máquina.
-3. Execute um ou mais *Producers* para enviar valores ao servidor.
-4. Execute um ou mais *Consumers* para visualizar os dados em tempo real.
+---
 
-## Licença
+## 💡 Funcionalidades
 
-Uso acadêmico/educacional.
+* 📡 Comunicação cliente-servidor
+* ⏱️ Envio de dados com timestamp
+* 👥 Suporte a múltiplos clientes simultâneos
+* 📈 Visualização gráfica dinâmica
+* 🔄 Separação entre produção e consumo de dados
+
+---
+
+## 🧩 Componentes do sistema
+
+* **Servidor** → Armazena e gerencia os dados
+* **Producer** → Envia dados ao servidor
+* **Consumer** → Consome e exibe os dados em gráfico
+
+---
+
+## ▶️ Como executar
+
+### Pré-requisitos
+
+* Qt instalado
+* Qt Creator ou `qmake` / `make`
+* Compilador C++ compatível
+
+### Passos
+
+```bash
+# Clone o repositório
+git clone https://github.com/GabrielFGonzaga/ProjetoPA_qtsupervisory.git
+
+# Acesse a pasta
+cd ProjetoPA_qtsupervisory
+```
+
+1. Compile separadamente:
+
+   * QtTcpServer
+   * QtTcpClientProducer
+   * QtTcpClientConsumer
+
+2. Execute o servidor
+
+3. Execute um ou mais Producers
+
+4. Execute um ou mais Consumers
+
+---
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto, foram aplicados conceitos como:
+
+* Programação de redes (TCP/IP)
+* Arquitetura cliente-servidor
+* Comunicação entre múltiplos processos
+* Desenvolvimento de interfaces com Qt
+* Visualização de dados em tempo real
+
+---
+
+## 🔮 Melhorias futuras
+
+* 🔹 Adicionar autenticação
+* 🔹 Melhorar tratamento de erros
+* 🔹 Persistência em banco de dados
+* 🔹 Melhorias na interface gráfica
+
+---
+
+## 👨‍💻 Autores
+
+Desenvolvido por **Gabriel Gonzaga** e **Aysllan Paulo** 🚀
